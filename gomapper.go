@@ -102,7 +102,7 @@ func (gm *GoMap) SetTileBaseLayer(zoom int, getter TileGetter) error {
 	return nil
 }
 
-func (gm GoMap) toPNG() ([]byte, error) {
+func (gm GoMap) ToPNG() ([]byte, error) {
 
 	out := image.NewRGBA(gm.baselayer.Bounds())
 

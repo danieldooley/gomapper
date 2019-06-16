@@ -125,9 +125,9 @@ func TestTileBaseLayerMap(t *testing.T) {
 			t.Fatalf("DrawMarkers failed: %v", err)
 		}
 
-		b, err := gm.toPNG()
+		b, err := gm.ToPNG()
 		if err != nil {
-			t.Fatalf("toPNG failed: %v", err)
+			t.Fatalf("ToPNG failed: %v", err)
 		}
 
 		err = ioutil.WriteFile(fmt.Sprintf("testout/TestTileBaseLayerMap%d.png", i), b, 0644)
