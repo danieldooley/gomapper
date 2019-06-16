@@ -14,9 +14,9 @@ if err != nil {
 	t.Fatalf("NewHttpTileGetter returned error: %v", err)
 }
 
-w.llb = LonLatBounds{LonLat{174.608878, -41.030715}, LonLat{175.181755, -41.357773}},
+llb = LonLatBounds{LonLat{174.608878, -41.030715}, LonLat{175.181755, -41.357773}},
 
-gm := NewMapFromBounds(w.llb)
+gm := NewMapFromBounds(llb)
 
 err = gm.SetTileBaseLayer(12, htg)
 if err != nil {
